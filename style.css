@@ -1,0 +1,83 @@
+body {
+  font-family: 'Montserrat', sans-serif;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #7d7c7c;
+}
+#calendar {
+  background-color: #1D252C;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 350px;
+}
+#calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#calendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  background-color: #1D252C;
+}
+.day {
+  text-align: center;
+  padding: 10px 5px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  /* background-color: #f3f3f3;
+  border-radius: 5px; */
+}
+.day.today {
+  background-color: #37A628;
+  border-radius: 30px;
+  color: white;
+}
+
+.day:hover{
+  background-color: #37A628;
+  border-radius: 30px;
+  color: white;
+}
+
+.day-name{
+  color: white;
+}
+.day-name:hover{
+  background-color: rgb(228, 0, 0);
+  cursor: pointer;
+}
+.day:not(.in-month) {
+  opacity: 0.5;
+  background-color: none;
+}
+
+#month-year{
+  font-size: 1.6rem;
+  color: white;
+}
+
+#prev-month, #next-month{
+  font-size: 25px;
+}
+
+button{
+  border-radius: 10px;
+  background-color: #37A628;
+  border: none;
+  width: 2.5rem;
+  color: white;
+}
+
+button:hover{
+  background-color: #37A628;
+}
+
+
